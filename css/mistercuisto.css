@@ -74,6 +74,7 @@ h1 {
 	margin: 5px;
 	text-align: center;
 	color: white;
+	font-size: 150%;
 	font-family: 'Stylish', sans-serif;
     font-family: 'La Belle Aurore', cursive;
 }
@@ -147,29 +148,47 @@ form {
     margin: auto;
     padding: 5px;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
     justify-content: center;
     align-items: stretch;
+    
 }
 
 .formulaire{
 	display: flex;
 }
 
+/*button {
+ width:100px;
+ margin-left:5px;
+/* box-shadow:1px 1px 1px #615757;*/
+ cursor:pointer;
+ }*/
+ 
+ input:focus, textarea:focus {
+ border-color: #FFFF00;
+ box-shadow: 10px 10px 5px #C7BCBC;
+ }
+    
+
 input,
 button,
  textarea {
-    padding: 6px 12px;
-   margin: 0;
+    /*padding: 6px 12px;*/
+    margin: 0;
     line-height: 32px;
 	font-family: 'Stylish', sans-serif;
     font-family: 'La Belle Aurore', cursive;
     font-size: 24px;
-    border: 0;
-    border-bottom: 1px solid #999;
-    align-items: stretch;
+    /*border: 0;*/
+    border:2px solid black;
+    /*border-bottom: 1px solid #999;*/
+    /*align-items: stretch;*/
     
-
+    
     
 
 /*------Formulaire cliqué ou pas------*/
