@@ -1,0 +1,173 @@
+/*--------Adaptation à un écran dont la largeur ne dépasse pas 768px-----------*/
+
+@media (min-width: 768px) 
+{
+.presentation_site, recette, recipe, .image, nav, .img{
+        flex-direction: column;
+    }
+    
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+
+
+/* L'entête*/
+
+header {
+
+	color: #8EF4D8;
+	width: 100%;
+	height: 200px;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 110%; 
+	font-family: 'Stylish', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+    display: flex;
+}
+#titre_principal{
+	display: inline block;
+}
+
+.logo{
+	width: 40%;
+}
+   
+}
+/* L'entête de navigation*/
+li {
+list-style-type: none;
+}
+
+nav{
+	display: flex;
+	text-align: center;
+	justify-content: right;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 1vw;
+}
+
+nav a {
+	color:#F6F2B3;
+	font-size: 2vw;
+	padding:5px;
+	margin: 0px;
+	font-family: 'Stylish', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+}
+nav a:hover
+{
+}
+
+
+h1 {
+	padding : 10px;
+	margin: 5px;
+	text-align: center;
+}
+
+
+/*------photo et commentaire sur le site-------*/
+
+.presentation_site{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:98%;
+	height:auto;
+	font-family: 'Stylish', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+    /*font-size: 200%;*/
+
+} 
+.texte_presentation {
+	width: 40%;
+	padding: 30px;
+	color: white;
+	font-size: 150%;
+	}
+	
+.plat {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Les valeurs du chef*/
+
+
+
+/* Les recette*/
+
+a {
+	font-size: 2vw;
+	font-family: 'Stylish', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.image {
+	max-width: 40%;
+	height: auto;
+}
+
+/*.recipe{
+	width: 20%;
+}*/
+
+.recette {
+	display: flex;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+
+}
+
+}
+.texte {
+	width: 10%;
+	text-align: center;
+}
+
+
+/*-----Les formulaires------------- */
+
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+input,
+button,
+ textarea {
+    padding: 6px 12px;
+   margin: 0;
+    line-height: 32px;
+	font-family: 'Stylish', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 24px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    align-items: stretch;
+    
+
+/*------Formulaire cliqué ou pas------*/
+
+a:link { color: red; }
+a:visted { color: green; }
+
+focus
+
+
