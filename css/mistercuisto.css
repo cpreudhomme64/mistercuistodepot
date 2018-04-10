@@ -1,6 +1,6 @@
 /*--------Adaptation à un écran dont la largeur ne dépasse pas 768px-----------*/
 
-@media (min-width: 768px) 
+@media (max-width: 768px) 
 {
 .presentation_site, recette, recipe, .image, nav, .img{
         flex-direction: column;
@@ -85,7 +85,7 @@ h1 {
 .presentation_site{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	width:98%;
 	height:auto;
 	font-family: 'Stylish', sans-serif;
@@ -151,6 +151,7 @@ button,
 	font-family: 'Stylish', sans-serif;
     font-family: 'La Belle Aurore', cursive;
     font-size: 24px;
+    outline: none;
     border:3px solid black;
     cursor:pointer;
 }
@@ -174,10 +175,7 @@ textarea:focus {
  box-shadow: 20px 20px 5px #A5A49A;
  }
  
-input:focus {
- border-color: #FBEC1A;
- box-shadow: 20px 20px 5px #A5A49A;
- }
+
 
 form {
     width: 50%;
@@ -190,11 +188,32 @@ form {
     align-items: stretch;
 }
 
+/*input:invalid {
+  border-color: #800000;
+ }
 
- input:valid {
-  border: 5px solid #10B110;
+textarea:invalid {
+  border-color: #800000;
+ }*/
+
+
+input:focus {
+ border-color: #FBEC1A;
+ box-shadow: 20px 20px 5px #A5A49A;
+ }
+ 
+textarea:focus {
+ border-color: #FBEC1A;
+ box-shadow: 20px 20px 5px #A5A49A;
+ }
+ 
+input:valid {
+  border-color: #21C20B;
 }
-    
+
+textarea:valid {
+ border-color: #21C20B;
+ }
 
 
 
